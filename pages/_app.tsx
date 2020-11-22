@@ -1,5 +1,5 @@
 import 'styles/tailwind.css';
-import { GlobalStyle } from '@styles';
+import { GlobalStyle, Page } from '@styles';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { Header, Footer } from '@components';
@@ -13,7 +13,9 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
       <GlobalStyle />
       <Header />
-      <Component {...pageProps} />
+      <Page>
+        <Component {...pageProps} />
+      </Page>
       <Footer />
     </>
   );

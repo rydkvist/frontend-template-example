@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { appName, dashboardURL, homeURL, aboutURL } from 'config';
 import { colors } from '@styles';
+import { useTabbing } from '@utils';
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -19,14 +20,16 @@ const H2 = styled.h2`
   color: ${colors.white};
   margin: 0;
   padding: 1rem;
+  margin-right: 1rem;
 `;
 
-const StyledLink = styled.a<{ isActive: boolean }>`
+const StyledLink = styled.a<{ isActive: boolean; isTabbing: boolean }>`
   cursor: pointer;
   font-size: 1.25rem;
   color: ${colors.white};
   padding: 1rem;
   text-decoration: none;
+  outline: none;
   &:hover {
     opacity: 0.75;
   }
@@ -35,9 +38,17 @@ const StyledLink = styled.a<{ isActive: boolean }>`
     css`
       text-decoration: underline;
     `}
+  ${props =>
+    props.isTabbing &&
+    css`
+      &:focus {
+        outline: 2px solid white;
+      }
+    `}
 `;
 
 export const Header = () => {
+  const isTabbing = useTabbing();
   const router = useRouter();
 
   const isActive = (href: string): boolean => router.pathname === href;
@@ -46,17 +57,17 @@ export const Header = () => {
     <StyledHeader>
       <H2>{appName}:</H2>
       <Link href={homeURL}>
-        <StyledLink href="#" isActive={isActive(homeURL)}>
+        <StyledLink href="#" isActive={isActive(homeURL)} isTabbing={isTabbing}>
           Home
         </StyledLink>
       </Link>
       <Link href={dashboardURL}>
-        <StyledLink href="#" isActive={isActive(dashboardURL)}>
+        <StyledLink href="#" isActive={isActive(dashboardURL)} isTabbing={isTabbing}>
           Dashboard
         </StyledLink>
       </Link>
       <Link href={aboutURL}>
-        <StyledLink href="#" isActive={isActive(aboutURL)}>
+        <StyledLink href="#" isActive={isActive(aboutURL)} isTabbing={isTabbing}>
           About
         </StyledLink>
       </Link>
