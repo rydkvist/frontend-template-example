@@ -1,4 +1,3 @@
-import 'styles/tailwind.css';
 import { GlobalStyle, Page } from '@styles';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
