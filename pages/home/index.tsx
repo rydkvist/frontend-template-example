@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { sum, subtract } from '@utils';
 import { appName } from 'config';
 import { Page, Main } from '@styles';
 
