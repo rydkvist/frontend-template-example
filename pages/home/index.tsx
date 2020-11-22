@@ -10,10 +10,11 @@ const Home = () => {
     <Page>
       <Head>
         <title>{appName}: Home</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Main>
+        <h1 style={{ padding: 0, margin: 0 }}>
+          <ion-icon name="home-outline" />
+        </h1>
         <h1>Home</h1>
       </Main>
     </Page>
