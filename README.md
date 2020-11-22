@@ -2,6 +2,7 @@
 
 ## About
 
+(Not done)
 This is a Frontend Template I made that consists of various stacks and frameworks:
 
 - React

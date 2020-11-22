@@ -1,5 +1,7 @@
 import Home from './home';
 
-export default () => {
+const Landing = () => {
   return <Home />;
 };
+
+export default Landing;
