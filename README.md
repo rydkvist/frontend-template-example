@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c3e10428-4c45-48d3-ae51-446be735de61/deploy-status)](https://app.netlify.com/sites/frontend-stack-niklas/deploys)
+
 ## About
 
 This is a Frontend Template I made that consists of various stacks and frameworks:

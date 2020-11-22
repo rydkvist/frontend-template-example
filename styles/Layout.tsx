@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Page = styled.div`
-  min-height: 100vh;
+  min-height: 50vh;
   padding: 0;
   margin: 0;
 `;
