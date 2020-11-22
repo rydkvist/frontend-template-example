@@ -3,19 +3,19 @@ import { Header, Footer } from '@components';
 import { appName } from 'config';
 import { Main, Page } from '@styles';
 
-const Dashboard = () => {
+const About = () => {
   return (
     <Page>
       <Head>
-        <title>{appName}: Dashboard</title>
+        <title>{appName}: About</title>
       </Head>
       <Main>
         <Header />
 
-        <h1>Dashboard</h1>
+        <h1>About</h1>
       </Main>
     </Page>
   );
 };
 
-export default Dashboard;
+export default About;

@@ -1,5 +1,6 @@
 {
-  "name": "nextjs-template",
+  "name": "frontend-template",
+  "description": "A frontend template I created that consists of React, NextJS, TypeScript, Redux, Styled Components, and more cool stuff!",
   "author": "Niklas Rydkvist",
   "license": "MIT License",
   "version": "0.1.0",

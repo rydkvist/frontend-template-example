@@ -1,1 +1,1 @@
-export const appName = 'Template';
+export const appName = 'Nikurasu';

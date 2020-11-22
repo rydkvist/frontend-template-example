@@ -1,16 +1,31 @@
-import styles from '../../pages/home/Home.module.css';
 import styled from 'styled-components';
+import Image from 'next/image';
+import { appName } from 'config';
 
-const Link = styled.a``;
+const StyledFooter = styled.footer`
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Link = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Footer = () => (
-  <footer className={styles.footer}>
+  <StyledFooter>
     <Link
       href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
       target="_blank"
       rel="noopener noreferrer"
     >
-      Powered by <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+      {appName} © Copyright {new Date().getFullYear()}
+      {/* Powered by <Image width="auto" height="auto" src="/vercel.svg" alt="Vercel Logo" /> */}
     </Link>
-  </footer>
+  </StyledFooter>
 );
