@@ -19,7 +19,10 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@components": ["components/index.ts"]
+      "@components": ["components/index.ts"],
+      "@utils": ["utils/index.ts"],
+      "@styles": ["styles/index.ts"],
+      "@assets": ["assets/index.ts"],
     }
   },
   "include": [

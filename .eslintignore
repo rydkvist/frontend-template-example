@@ -1,0 +1,10 @@
+.eslintrc.js
+*.json
+*.png
+*.svg
+*.scss
+*.snap
+*.gif
+*.css
+node_modules
+.next
