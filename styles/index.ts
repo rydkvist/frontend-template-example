@@ -1,3 +1,3 @@
 export { colors } from './colors';
 export { GlobalStyle } from './GlobalStyle';
-export { Page, Main } from './Layout';
+export { Page, Main } from './layout';

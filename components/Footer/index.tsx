@@ -17,7 +17,7 @@ const H3 = styled.h3`
 `;
 
 export const Footer = () => (
-  <StyledFooter>
+  <StyledFooter role="contentinfo">
     <H3>
       {appName} © Copyright {new Date().getFullYear()}
     </H3>

@@ -13,7 +13,6 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
   flex-direction: row;
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -70,7 +69,7 @@ export const Header = () => {
   const isActive = (href: string): boolean => router.pathname === href;
 
   return (
-    <StyledHeader>
+    <StyledHeader role="navigation">
       <H2>{appName}:</H2>
       <Link href={homeURL}>
         <StyledLink href="#" isActive={isActive(homeURL)} isTabbing={isTabbing}>

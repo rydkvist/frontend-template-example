@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-export const Page = styled.div`
-  min-height: 50vh;
+export const Main = styled.section`
   padding: 0;
   margin: 0;
 `;
 
-export const Main = styled.main`
+export const Page = styled.div`
   padding: 5rem 0;
   flex: 1;
   display: flex;
