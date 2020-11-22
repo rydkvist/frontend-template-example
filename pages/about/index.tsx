@@ -12,7 +12,7 @@ const About = () => {
       <Main>
         <Header />
 
-        <h1>About</h1>
+        <h1 className="bg-blue-200">About</h1>
       </Main>
     </Page>
   );
