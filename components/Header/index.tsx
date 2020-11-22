@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { appName } from 'config';
+import { appName, dashboardURL, homeURL, aboutURL } from 'config';
 import { colors } from '@styles';
 
 const StyledHeader = styled.header`
@@ -45,18 +45,18 @@ export const Header = () => {
   return (
     <StyledHeader>
       <H2>{appName}:</H2>
-      <Link href="/">
-        <StyledLink href="#" isActive={isActive('/')}>
+      <Link href={homeURL}>
+        <StyledLink href="#" isActive={isActive(homeURL)}>
           Home
         </StyledLink>
       </Link>
-      <Link href="/dashboard">
-        <StyledLink href="#" isActive={isActive('/dashboard')}>
+      <Link href={dashboardURL}>
+        <StyledLink href="#" isActive={isActive(dashboardURL)}>
           Dashboard
         </StyledLink>
       </Link>
-      <Link href="/about">
-        <StyledLink href="#" isActive={isActive('/about')}>
+      <Link href={aboutURL}>
+        <StyledLink href="#" isActive={isActive(aboutURL)}>
           About
         </StyledLink>
       </Link>
