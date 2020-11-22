@@ -14,6 +14,10 @@ const StyledHeader = styled.header`
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  flex-direction: row;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const H2 = styled.h2`
@@ -21,9 +25,14 @@ const H2 = styled.h2`
   margin: 0;
   padding: 1rem;
   margin-right: 1rem;
+  @media screen and (max-width: 768px) {
+    margin-right: 0rem;
+  }
 `;
 
 const StyledLink = styled.a<{ isActive: boolean; isTabbing: boolean }>`
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-size: 1.25rem;
   color: ${colors.white};
@@ -47,6 +56,13 @@ const StyledLink = styled.a<{ isActive: boolean; isTabbing: boolean }>`
     `}
 `;
 
+const IconWrapper = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+`;
+
 export const Header = () => {
   const isTabbing = useTabbing();
   const router = useRouter();
@@ -58,16 +74,25 @@ export const Header = () => {
       <H2>{appName}:</H2>
       <Link href={homeURL}>
         <StyledLink href="#" isActive={isActive(homeURL)} isTabbing={isTabbing}>
+          <IconWrapper>
+            <ion-icon name="home-outline" />
+          </IconWrapper>
           Home
         </StyledLink>
       </Link>
       <Link href={dashboardURL}>
         <StyledLink href="#" isActive={isActive(dashboardURL)} isTabbing={isTabbing}>
+          <IconWrapper>
+            <ion-icon name="grid-outline" />
+          </IconWrapper>
           Dashboard
         </StyledLink>
       </Link>
       <Link href={aboutURL}>
         <StyledLink href="#" isActive={isActive(aboutURL)} isTabbing={isTabbing}>
+          <IconWrapper>
+            <ion-icon name="information-circle-outline" />
+          </IconWrapper>
           About
         </StyledLink>
       </Link>
