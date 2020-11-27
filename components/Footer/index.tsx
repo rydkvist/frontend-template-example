@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { appName } from 'config';
+import { author } from 'config';
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -19,7 +19,7 @@ const H3 = styled.h3`
 export const Footer = () => (
   <StyledFooter role="contentinfo">
     <H3>
-      {appName} © Copyright {new Date().getFullYear()}
+      {author} © Copyright {new Date().getFullYear()}
     </H3>
   </StyledFooter>
 );
