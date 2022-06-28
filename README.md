@@ -1,6 +1,6 @@
 # Frontend Template Example
 
-This is a NextJS app template built with React and TypeScript. It consists of an organized folder and file structure, together with some accessibility features, and established ESLinter, Prettier, and Babel config files.
+A NextJS web application template built with React and TypeScript. It consists of an organized folder and file structure, together with some accessibility features, and established ESLinter, Prettier, and Babel config files.
 
 Frontend Stacks:
 
