@@ -1,28 +1,32 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c3e10428-4c45-48d3-ae51-446be735de61/deploy-status)](https://app.netlify.com/sites/frontend-template-niklas/deploys)
+# Frontend Template Example
 
-## About
-
-This is a NextJS app template built with React and TypeScript. It consists of a well-organized path and file structure, together with an ESLinter, Prettier, and Babel configuration files.
+This is a NextJS app template built with React and TypeScript. It consists of an organized folder and file structure, together with some accessibility features, and established ESLinter, Prettier, and Babel config files.
 
 Frontend Stacks:
 
 - React + NextJS
 - TypeScript
 - Styled Components
-- Redux
 
 ## Getting Started
 
 ### Installation
 
-Make sure to have installed one of the following dependencies:
+Make sure to have installed the following dependency:
 
 - [NodeJS](https://nodejs.org/)
-- [Yarn](https://yarnpkg.com/)
 
 ### Running
 
-1. Clone the repository: `git clone git@github.com:Nojze/frontend-template.git`
-2. Go into the directory of the project: `cd frontend-template`
-3. Install packages: `npm install` or `yarn install`
-4. Start the project: `npm start` or `yarn start`
+1. Clone the repository: `git clone git@github.nojze/git@github.com:Nojze/frontend-template-example.git`
+2. Go into the directory of the project: `cd git@github.com:Nojze/frontend-template-example`
+3. Install packages: `npm install`
+4. Start the project: `npm run dev`
+5. Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+## Author
+
+Niklas Rydkvist: [niklas@rydkvist.com](mailto:niklas@rydkvist.com)
+
+## License
+The Frontend Template Example is available under the [MIT license](https://github.com/Nojze/frontend-template-example/blob/main/LICENSE).
